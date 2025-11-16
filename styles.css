@@ -118,6 +118,17 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    min-width: 40px;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger:hover {
+    background-color: rgba(214, 51, 132, 0.1);
 }
 
 .bar {
@@ -126,6 +137,7 @@ body {
     background: var(--dark-color);
     margin: 3px 0;
     transition: var(--transition-fast);
+    border-radius: 2px;
 }
 
 /* Hero sekce */
@@ -1087,7 +1099,267 @@ body.tm7-view-mode::before {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Responsivní design */
+/* Responsivní design - Mobile First Approach */
+
+/* Základní mobilní styly (do 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Navigace */
+    .navbar {
+        padding: 1rem 15px;
+    }
+    
+    .logo h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: var(--transition-fast);
+        box-shadow: var(--shadow-medium);
+        padding: 2rem 0;
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    /* Hero sekce */
+    .hero {
+        min-height: 80vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .hero-image {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-image .thermomix-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* Sekce nadpisy */
+    .section-header h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+    
+    /* About sekce */
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        max-width: none;
+        margin: 0;
+    }
+    
+    .about-image {
+        order: -1;
+        justify-content: center;
+    }
+    
+    .about-image .chef-image {
+        width: 200px;
+        height: 240px;
+    }
+    
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .about-text p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Thermomix sekce */
+    .thermomix-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .thermomix-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .thermomix-image .tm-device {
+        width: 280px;
+        height: 280px;
+    }
+    
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    /* Galerie */
+    .recipes-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .recipe-card {
+        height: 250px;
+    }
+    
+    /* Kontakt */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-methods {
+        gap: 1.5rem;
+    }
+    
+    .contact-method {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-method i {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+    
+    /* Formulář */
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    /* Scroll indicator */
+    .scroll-indicator {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Mobilní landscape a malé tablety (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-image .thermomix-image {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .about-image .chef-image {
+        width: 220px;
+        height: 260px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .btn {
+        max-width: 300px;
+    }
+}
+
+/* Standardní mobilní (do 768px) */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -1104,78 +1376,60 @@ body.tm7-view-mode::before {
         transition: var(--transition-fast);
         box-shadow: var(--shadow-medium);
         padding: 2rem 0;
+        z-index: 1000;
     }
     
     .nav-menu.active {
         left: 0;
     }
     
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2rem;
+    /* Lightbox úpravy pro mobil */
+    .lightbox-content {
+        width: 95%;
+        height: auto;
+        max-height: 90vh;
+        margin: 5% auto;
     }
     
-    .hero-text h1 {
-        font-size: 2.5rem;
+    .lightbox-image {
+        max-width: 100%;
+        max-height: 70vh;
+        width: auto;
+        height: auto;
     }
     
-    .hero-buttons {
-        justify-content: center;
+    .lightbox-nav {
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 50px;
+        height: 50px;
     }
     
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 3rem;
-        max-width: none;
-        margin: 0;
-    }
-    
-    .about-image {
-        order: -1;
-        justify-content: center;
-    }
-    
-    .about-image .chef-image {
-        width: 250px;
-        height: 280px;
-    }
-    
-    .thermomix-hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .recipes-grid {
-        grid-template-columns: 1fr;
+    .lightbox-close {
+        font-size: 2rem;
+        padding: 1rem;
+        width: 50px;
+        height: 50px;
     }
 }
 
-/* Medium screens */
-@media (max-width: 1024px) {
+/* Tablety na výšku (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr 400px;
+        gap: 3rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+    
     .about-content {
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 280px 1fr;
         gap: 3rem;
     }
     
@@ -1183,20 +1437,53 @@ body.tm7-view-mode::before {
         width: 240px;
         height: 280px;
     }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .recipes-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
 }
 
-@media (max-width: 480px) {
+/* Tablety na šířku (1025px - 1199px) */
+@media (min-width: 1025px) and (max-width: 1199px) {
     .container {
-        padding: 0 15px;
+        max-width: 1000px;
     }
     
-    .hero-text h1 {
-        font-size: 2rem;
+    .recipes-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
     
-    .section-header h2 {
-        font-size: 2rem;
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* Velké obrazovky (1200px+) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .recipes-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
     
     .contact-form-container {
         padding: 2rem 1.5rem;
@@ -1261,67 +1548,4 @@ body.tm7-view-mode::before {
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
-}
-
-/* Responzivní styly pro galerii a lightbox */
-@media (max-width: 1024px) {
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.8rem;
-    }
-    
-    .contact-content {
-        gap: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.8rem;
-    }
-    
-    .gallery-item img {
-        height: 150px;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .contact {
-        padding: 40px 0 50px 0;
-    }
-    
-    .lightbox-prev {
-        left: 20px;
-    }
-    
-    .lightbox-next {
-        right: 20px;
-    }
-    
-    .lightbox-prev,
-    .lightbox-next {
-        padding: 10px 15px;
-        font-size: 16px;
-    }
-    
-    .lightbox-close {
-        font-size: 30px;
-        top: 15px;
-        right: 25px;
-    }
-    
-    #lightbox-img {
-        max-width: 95%;
-        max-height: 80%;
-    }
-    
-    .lightbox-counter {
-        bottom: 20px;
-        padding: 8px 16px;
-        font-size: 14px;
-    }
 }

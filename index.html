@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vášnivý kuchař s Thermomix TM7 | Objevte kouzlo vaření</title>
+    <meta name="description" content="Jsem vášnivý kuchař, který objevuje nové chuti s revolučním robotem Thermomix TM7. Kontaktujte mě a objevte i vy kouzlo moderního vaření!">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigace -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home"><h2><i class="fas fa-utensils"></i> Kuchař TM</h2></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Domů</a>
+                <a href="#about" class="nav-link">TM + TM7</a>
+                <a href="#thermomix" class="nav-link">Thermomix TM7</a>
+                <a href="#recipes" class="nav-link">Galerie jídel</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero sekce -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>TM🤝TM7 = <span class="highlight">Dokonalý tým!</span></h1>
+                <p class="hero-description">
+                    Ahoj chlapi! Jsem <strong>Tomáš Mutina</strong> (TM) a tohle je můj <strong>Thermomix TM7</strong>. 
+                    Jako učitel vím, jak věci fungují - a tenhle stroj prostě funguje perfektně! 
+                    Ukážu vám, jak si jako chlap užít vaření bez stresu a s maximálním výsledkem. 💪
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Zavolej mi, kámo!
+                    </a>
+                    <a href="#thermomix" class="btn btn-secondary">
+                        <i class="fas fa-rocket"></i> Ukáž mi tu mašinu!
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/TM7.jpeg" alt="Thermomix TM7" class="hero-thermomix-image">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- O mně sekce -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>TM + TM7 = 🔥</h2>
+                <p>Tomáš Mutina + Thermomix TM7 = Dokonalá kombinace!</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/AF836152-691E-423C-BA3D-F5BFF3BD4388_1_105_c.jpeg" alt="Tomáš Mutina - Učitel & Kuchař" class="chef-image">
+                </div>
+                <div class="about-text">
+                    <h3>Ahoj chlapi! Jsem Tomáš a vaření je moje druhá profese!</h3>
+                    <p>
+                        Ve dne učím na gymnáziu, večer vládnu v kuchyni. A víte co? Moje iniciály TM jsou jako stvořené pro <strong>Thermomix TM7</strong>! 
+                        Možná je to osud, možná náhoda - ale jedno je jisté: tenhle stroj změnil můj přístup k vaření úplně!
+                    </p>
+                    <div class="passion-points">
+                        <div class="passion-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Učitel = Systematický přístup</h4>
+                            <p>Jako pedagog vím, jak vysvětlit složité věci jednoduše. Ukážu vám každý krok!</p>
+                        </div>
+                        <div class="passion-item">
+                            <i class="fas fa-fire"></i>
+                            <h4>Muž v kuchyni = Síla!</h4>
+                            <p>Žádné komplikované recepty. Chci vám ukázat, jak si užít vaření jako chlap!</p>
+                        </div>
+                        <div class="passion-item">
+                            <i class="fas fa-rocket"></i>
+                            <h4>TM7 = Tajná zbraň</h4>
+                            <p>Tohle není jen mixér. To je váš osobní sous chef, který vás nikdy nezklame!</p>
+                        </div>
+                    </div>
+                    <div class="tm-connection">
+                        <h4>🎯 Proč právě já?</h4>
+                        <p>
+                            <strong>T</strong>omáš <strong>M</strong>utina + <strong>T</strong>hermo<strong>m</strong>ix TM<strong>7</strong> = 
+                            Kombinace, která funguje! Jako učitel vím, jak předat znalosti, jako kuchař znám každou fintu. 
+                            A jako majitel TM7 vám ukážu, proč je tohle nejlepší investice, kterou můžete udělat!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thermomix TM7 sekce -->
+    <section id="thermomix" class="thermomix">
+        <div class="container">
+            <div class="section-header">
+                <h2>TM7 - Moje tajná zbraň! 🚀</h2>
+                <p>Chlapi, tahle mašina je jako švýcarák, ale pro kuchyni!</p>
+            </div>
+            <div class="thermomix-content">
+                <div class="thermomix-hero">
+                    <div class="thermomix-image">
+                        <img src="images/TM7.jpeg" alt="Thermomix TM7" class="thermomix-product-image">
+                    </div>
+                    <div class="thermomix-intro">
+                        <h3>Proč si jako chlap zamilovat TM7?</h3>
+                        <p>
+                            <strong>Hej kámo!</strong> Jako učitel musím být efektivní a jako kuchař chci výsledky. 
+                            TM7 mi dělá <strong>sous chef-a, kuchařského asistenta i myčku</strong> v jednom! 
+                            Žádné dlouhé přípravy, žádný chaos - jen <strong>čistá mužská efektivita</strong>. 💪
+                        </p>
+                        <div class="cta-box">
+                            <h4><i class="fas fa-fire"></i> Chceš vidět tu sílu v akci?</h4>
+                            <p>Ukážu ti, jak si jako chlap užít vaření - bez stresu, s maximálním výsledkem!</p>
+                            <a href="#contact" class="btn btn-primary">Pojď na ukázku!</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Úspora času</h4>
+                        <p>Připravte celé menu během chvíle. TM7 pracuje za vás, zatímco se můžete věnovat jiným činnostem.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Perfektní výsledky</h4>
+                        <p>Díky preciznímu řízení teploty a rychlosti dosáhnete vždy skvělých výsledků.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Chytré funkce</h4>
+                        <p>Guided Cooking vás krok za krokem provede každým receptem s dokonalou přesností.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Zdravé vaření</h4>
+                        <p>Vařte šetrným způsobem, který zachovává vitamíny a živiny v jídle.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Tisíce receptů</h4>
+                        <p>Přístup k obrovské databázi receptů ze světových kuchyní přímo v zařízení.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>20 funkcí v 1</h4>
+                        <p>Nahradí mixér, váhy, parník, mlýnek a mnoho dalších spotřebičů.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie jídel sekce -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galerie jídel</h2>
+                <p>Podívejte se na moje kulinářské výtvory připravené s Thermomixem TM7</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-src="images/10ff2912cdb11986d71cb7f47fc3702b.JPEG">
+                    <img src="images/10ff2912cdb11986d71cb7f47fc3702b.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/4bcfb1f7eac0b26b656b819bdfe8a6e4.JPEG">
+                    <img src="images/4bcfb1f7eac0b26b656b819bdfe8a6e4.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/52cb29e57d1d6043880abd7e5d31e36b.JPEG">
+                    <img src="images/52cb29e57d1d6043880abd7e5d31e36b.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/5ce95432ae60a005fb55b712f52ff983.JPEG">
+                    <img src="images/5ce95432ae60a005fb55b712f52ff983.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/5d28a42a0826d76c06f0ba724c513448.JPEG">
+                    <img src="images/5d28a42a0826d76c06f0ba724c513448.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/5eef4ad2a0dfad0dfbdaf220f3db4475.JPEG">
+                    <img src="images/5eef4ad2a0dfad0dfbdaf220f3db4475.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/6e8e754f10d483463e0fa0115b7a7dee.JPEG">
+                    <img src="images/6e8e754f10d483463e0fa0115b7a7dee.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/7f77c769439b6db6e08fd4b8b22296ff.JPEG">
+                    <img src="images/7f77c769439b6db6e08fd4b8b22296ff.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/841eea3ce1b09ed44f4a2e203833e46b.JPEG">
+                    <img src="images/841eea3ce1b09ed44f4a2e203833e46b.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/8dd8b31a313215efb6ff976cf1af4715.JPEG">
+                    <img src="images/8dd8b31a313215efb6ff976cf1af4715.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/98929cd37c9d244bef109ea6e5c89bc3.JPEG">
+                    <img src="images/98929cd37c9d244bef109ea6e5c89bc3.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/a847d51032d80f300b6b56b10cdf55e4.JPEG">
+                    <img src="images/a847d51032d80f300b6b56b10cdf55e4.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/add2b4a16ed031d0409f13d874c38a55.JPEG">
+                    <img src="images/add2b4a16ed031d0409f13d874c38a55.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/b59cdc99239b612f6cbcc20d4c3e0091.JPEG">
+                    <img src="images/b59cdc99239b612f6cbcc20d4c3e0091.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/bbb20d2d3f512a6cea16fe206f018edb.JPEG">
+                    <img src="images/bbb20d2d3f512a6cea16fe206f018edb.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/d1ee0c8f50af1721a0a373e310344828.JPEG">
+                    <img src="images/d1ee0c8f50af1721a0a373e310344828.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/d4573ec120b45e77bb9a3df19c2e5705.JPEG">
+                    <img src="images/d4573ec120b45e77bb9a3df19c2e5705.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/df97b65e48a1aee93dfa42cd431bb7f5.JPEG">
+                    <img src="images/df97b65e48a1aee93dfa42cd431bb7f5.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/e4bb512e5be1960d9b1dd0a63f69bdb9.JPEG">
+                    <img src="images/e4bb512e5be1960d9b1dd0a63f69bdb9.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/e71bdb2b1b60249b04889aecedbb3212.JPEG">
+                    <img src="images/e71bdb2b1b60249b04889aecedbb3212.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/f35e95171964b59728197e4fef3a6c56.JPEG">
+                    <img src="images/f35e95171964b59728197e4fef3a6c56.JPEG" alt="Kulinářský výtvor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <h3>Vidíš ty výsledky? Taky je chceš? 🔥</h3>
+                <p>Jako učitel ti garantuji: Po ukázce budeš vaření milovat! TM7 = tvůj nový nejlepší kámoš.</p>
+                <a href="#contact" class="btn btn-primary">Ukáž mi to!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox pro galerii -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <img id="lightbox-img" src="" alt="Galerie">
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-counter">
+                <span id="current-image">1</span> / <span id="total-images">21</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontakt sekce -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontaktujte mě</h2>
+                <p>Připraven odpovědět na všechny vaše dotazy o Thermomixu TM7</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Pojďme si povídat!</h3>
+                    <p>
+                        Máte otázky o Thermomixu TM7? Chcete si domluvit ukázku? 
+                        Nebo jen potřebujete poradit s receptem? Jsem tu pro vás!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>+420 734 403 611</p>
+                                <small>Po-Ne: 9:00-18:00</small>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:t.mutina@email.cz">t.mutina@email.cz</a></p>
+                                <small>Odpovídám do 24 hodin</small>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ukázky</h4>
+                                <p>Moravskoslezský kraj</p>
+                                <small>Přijedu až k vám domů</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="urgency-box">
+                        <h4><i class="fas fa-exclamation-circle"></i> Proč volat právě teď?</h4>
+                        <ul>
+                            <li>Bezplatná ukázka u vás doma</li>
+                            <li>Odpovím na všechny vaše otázky</li>
+                            <li>Ukáži vám konkrétní recepty</li>
+                            <li>Poradím s výběrem příslušenství</li>
+                            <li>Speciální nabídky jen pro nové zákazníky</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3><i class="fas fa-comments"></i> Rychlý kontakt</h3>
+                        <div class="form-group">
+                            <i class="fas fa-user form-icon"></i>
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Vaše jméno</label>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-envelope form-icon"></i>
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-phone form-icon"></i>
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Telefon (nepovinný)</label>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-comment-alt form-icon"></i>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message">Vaše zpráva (nepovinná)</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Odeslat zprávu
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i> 
+                            Vaše údaje jsou v bezpečí a nebudou sdíleny s třetími stranami
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-utensils"></i> Kuchař TM</h4>
+                    <p>Vaše cesta k dokonalému vaření s Thermomixem TM7</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Rychlé odkazy</h4>
+                    <a href="#about">TM + TM7</a>
+                    <a href="#thermomix">Thermomix TM7</a>
+                    <a href="#recipes">Galerie jídel</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-phone"></i> +420 734 403 611</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:t.mutina@email.cz">t.mutina@email.cz</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Moravskoslezský kraj</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kuchař TM. Vytvořeno s vášní pro vaření.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
